@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import math
  
  
- eDIT QUI VA FAIRE UN SYNTAXeRRIOR
+# eDIT QUI VA FAIRE UN SYNTAXeRRIOR
  
 #Nouvelle valeur de la position
 #Oscillations correspond au signal sinusoidal impose
