@@ -69,7 +69,7 @@ def Germain (iterations,W,oscillations,D,rho,h,dl,dt,Ntemps,eps,itermax=100):
      
     erreur=eps*2
     iter = 0
-    # On ajoute un nombre maximal d'itérations histoire de voir ce qu'il en 
+    # On ajoute un nombre maximal d'iterations histoire de voir ce qu'il en 
     # ressort plus facilement
     while erreur>eps and  iter <= itermax:
         print('iteration',iter)
@@ -175,7 +175,7 @@ t = np.linspace(0,Tobs,Ntemps)
 W[:,Nlongueur//2,Nlongueur//2] = oscillations(freq,t)
  
 #Modification du reste du tableau
-Germain(iterations,W,oscillations,D,rho,h,dl,dt,Ntemps,eps)
+Germain(iterations,W,oscillations,D,rho,h,dl,dt,Ntemps,eps,10)
  
  
 #Fonction qui renvoie un tableau ayant des 1 aux endroits ou il y a du sable
@@ -193,7 +193,7 @@ def alexandre(Tfin,eps):
              
              
 #Recherche des zeros:
-Tfin = W[-3]
+Tfin = W[2]
  
 Image = alexandre(Tfin,eps)
 print(Tfin)
