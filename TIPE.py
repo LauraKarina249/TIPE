@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import math
  
  
+ eDIT QUI VA FAIRE UN SYNTAXeRRIOR
+ 
 #Nouvelle valeur de la position
 #Oscillations correspond au signal sinusoidal impose
 def nouvelle_position(W,oscillations,i,j,n,D,rho,h,dl,dt):
