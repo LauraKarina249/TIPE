@@ -1,3 +1,6 @@
+# On ne veut pas non plus garder les .png dans la sauvegarde
+*.png
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
