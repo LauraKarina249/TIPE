@@ -65,11 +65,13 @@ def iterations(W,oscillations,D,rho,h,dl,dt,Ntemps):
      
      
 #Fonction d'oscillations
-def Germain (iterations,W,oscillations,D,rho,h,dl,dt,Ntemps,eps):
+def Germain (iterations,W,oscillations,D,rho,h,dl,dt,Ntemps,eps,itermax=100):
      
     erreur=eps*2
     iter = 0
-    while erreur>eps:
+    # On ajoute un nombre maximal d'itérations histoire de voir ce qu'il en 
+    # ressort plus facilement
+    while erreur>eps and  iter <= itermax:
         print('iteration',iter)
         erreur=iterations(W,oscillations,D,rho,h,dl,dt,Ntemps)
         iter += 1
