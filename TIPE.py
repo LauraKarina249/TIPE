@@ -39,7 +39,7 @@ def nouvelle_position(W,oscillations,i,j,n,D,rho,h,dl,dt):
             j = j-2   
          
         # Ne pas oublier le carré du dt**2 
-        return (1/(2*rho*h*(dl**4)-16*D*(dt**2)))*((rho*h*(dl**4))*(W[n+1,i,j]+W[n-1,i,j])+(D*dt)*(W[n,i+2,j]+W[n,i-2,j]+W[n,i,j+2]+W[n,i,j-2]-6*(W[n,i+1,j]+W[n,i-1,j]+W[n,i,j+1]+W[n,i,j-1])+W[n,i+1,j+1]+W[n,i+1,j-1]+W[n,i-1,j+1]+W[n,i-1,j-1]))
+        return (1/(2*rho*h*(dl**4)-16*D*(dt**2)))*((rho*h*(dl**4))*(W[n+1,i,j]+W[n-1,i,j])+(D*dt**2)*(W[n,i+2,j]+W[n,i-2,j]+W[n,i,j+2]+W[n,i,j-2]-6*(W[n,i+1,j]+W[n,i-1,j]+W[n,i,j+1]+W[n,i,j-1])+W[n,i+1,j+1]+W[n,i+1,j-1]+W[n,i-1,j+1]+W[n,i-1,j-1]))
          
      
      
